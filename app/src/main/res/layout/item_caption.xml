@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F15C7A"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton2"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:backgroundTint="#F4EEE9"
+                app:srcCompat="@drawable/ic_baseline_content_copy_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_launcher_foreground"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ToggleButton
+                android:id="@+id/btn_favorite"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_selector"
+                android:onClick="onCustomToggleClick"
+                android:scaleType="fitXY"
+                android:textOff=""
+                android:textOn=""></ToggleButton>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_caption"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="Caption"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

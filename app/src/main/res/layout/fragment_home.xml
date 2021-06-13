@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F15C7A"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton1"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:backgroundTint="#F4EEE9"
+                    app:srcCompat="@drawable/ic_baseline_content_copy_24"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/iv_icon1"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/icon1"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ToggleButton
+                    android:id="@+id/btn_favorite1"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_selector"
+                    android:onClick="onCustomToggleClick"
+                    android:scaleType="fitXY"
+                    android:textOff=""
+                    android:textOn=""
+                    tools:ignore="OnClick"></ToggleButton>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_caption1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="Tổng là cộng, hiệu là trừ \n Tích là nhân, thương là anh"
+
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F15C7A"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton10"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:backgroundTint="#F4EEE9"
+                app:srcCompat="@drawable/ic_baseline_download_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/iv_photos2"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/meme1"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ToggleButton
+                android:id="@+id/btn_favorite2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/toggle_selector"
+                android:textOff=""
+                android:textOn=""
+                android:scaleType="fitXY"
+                android:onClick="onCustomToggleClick"
+                tools:ignore="OnClick"></ToggleButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="#F15C7A"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#F4EEE9"
+                app:srcCompat="@drawable/ic_baseline_play_circle_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/song3"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Bạch nguyện quang và nốt chu sa"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textStyle="italic"
+                android:scaleType="fitXY"
+                android:textSize="18sp"/>
+            <ToggleButton
+                android:id="@+id/btn_favorite3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/toggle_selector"
+                android:textOff=""
+                android:textOn=""
+                android:scaleType="fitXY"
+                android:onClick="onCustomToggleClick"
+                tools:ignore="OnClick"></ToggleButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F15C7A"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton4"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:backgroundTint="#F4EEE9"
+                    app:srcCompat="@drawable/ic_baseline_content_copy_24"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/iv_icon4"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/icon2"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ToggleButton
+                    android:id="@+id/btn_favorite4"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_selector"
+                    android:onClick="onCustomToggleClick"
+                    android:scaleType="fitXY"
+                    android:textOff=""
+                    android:textOn=""
+                    tools:ignore="OnClick"></ToggleButton>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_caption4"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="Người ta gọi em là thiếu nữ còn em chỉ thấy thiếu anh."
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F15C7A"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton5"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:backgroundTint="#F4EEE9"
+                app:srcCompat="@drawable/ic_baseline_download_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/iv_photos5"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/meme2"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ToggleButton
+                android:id="@+id/btn_favorite5"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/toggle_selector"
+                android:textOff=""
+                android:textOn=""
+                android:scaleType="fitXY"
+                android:onClick="onCustomToggleClick"
+                tools:ignore="OnClick"></ToggleButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="#F15C7A"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#F4EEE9"
+                app:srcCompat="@drawable/ic_baseline_play_circle_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/song6"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Ma pháp tình yêu"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textStyle="italic"
+                android:textSize="18sp"/>
+            <ToggleButton
+                android:id="@+id/btn_favorite6"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/toggle_selector"
+                android:textOff=""
+                android:textOn=""
+                android:scaleType="fitXY"
+                android:onClick="onCustomToggleClick"
+                tools:ignore="OnClick"></ToggleButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F15C7A"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton7"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:backgroundTint="#F4EEE9"
+                    app:srcCompat="@drawable/ic_baseline_content_copy_24"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/iv_icon7"
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/icon3"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ToggleButton
+                    android:id="@+id/btn_favorite7"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_selector"
+                    android:onClick="onCustomToggleClick"
+                    android:scaleType="fitXY"
+                    android:textOff=""
+                    android:textOn=""
+                    tools:ignore="OnClick"></ToggleButton>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_caption7"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:text="Đen Vâu thì muốn trồng rau và nuôi thêm cá, \n còn anh thì đang hỏi má để nuôi thêm em."
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F15C7A"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton8"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:clickable="true"
+                android:backgroundTint="#F4EEE9"
+                app:srcCompat="@drawable/ic_baseline_download_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/iv_photos8"
+                android:layout_width="100dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/meme3"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ToggleButton
+                android:id="@+id/btn_favorite8"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/toggle_selector"
+                android:textOff=""
+                android:textOn=""
+                android:scaleType="fitXY"
+                android:onClick="onCustomToggleClick"
+                tools:ignore="OnClick"></ToggleButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="#F15C7A"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="30dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#F4EEE9"
+                app:srcCompat="@drawable/ic_baseline_play_circle_24"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/song9"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="I like you so much, you'll know it"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textStyle="italic"
+                android:textSize="18sp"/>
+            <ToggleButton
+                android:id="@+id/btn_favorite9"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/toggle_selector"
+                android:textOff=""
+                android:textOn=""
+                android:scaleType="fitXY"
+                android:onClick="onCustomToggleClick"
+                tools:ignore="OnClick"></ToggleButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
